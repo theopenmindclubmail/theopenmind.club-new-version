@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="el" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>theopenmind.club | Ψηφιακή Αυτονομία & Mailcast</title>
+    <meta name="description" content="Το εβδομαδιαίο Mailcast για όσους αρνούνται τα παραδοσιακά στεγανά. AI, Vibe Coding, High-converting Funnels & Αυτοματοποιήσεις." />
+    <meta property="og:title" content="theopenmind.club | Ψηφιακή Αυτονομία & Mailcast" />
+    <meta property="og:description" content="Το εβδομαδιαίο Mailcast για όσους αρνούνται τα παραδοσιακά στεγανά. AI, Vibe Coding, High-converting Funnels & Αυτοματοποιήσεις." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Roboto+Condensed:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script>
+      // Compatibility shim for browser extensions attempting to override window.fetch
+      try {
+        const _origFetch = window.fetch ? window.fetch.bind(window) : null;
+        let _activeFetch = _origFetch;
+        Object.defineProperty(window, 'fetch', {
+          configurable: true,
+          enumerable: true,
+          get() {
+            return _activeFetch;
+          },
+          set(newFetch) {
+            _activeFetch = typeof newFetch === 'function' ? newFetch : _origFetch;
+          }
+        });
+      } catch (e) {
+        // Safe failover
+      }
+    </script>
+  </head>
+  <body class="bg-[#EAE3D3] text-[#592828] dark:bg-[#15101B] dark:text-[#EAE3D3] antialiased selection:bg-[#B0A7E7]/40 selection:text-[#544799] dark:selection:text-[#B0A7E7] transition-colors duration-200">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

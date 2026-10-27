@@ -1,0 +1,6 @@
+{
+  "name": "theopenmind.club | Ψηφιακή Αυτονομία & Mailcast",
+  "description": "Το εβδομαδιαίο Mailcast για όσους αρνούνται τα παραδοσιακά στεγανά. AI, Vibe Coding, High-converting Funnels & Αυτοματοποιήσεις.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
