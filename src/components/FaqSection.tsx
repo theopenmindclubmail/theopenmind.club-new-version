@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ChevronDown } from 'lucide-react';
 import { BrandStar } from './BrandStar.tsx';
+import { InteractiveChatbot } from './InteractiveChatbot.tsx';
 
 interface FaqItem {
   id: string;
@@ -14,7 +15,7 @@ const FAQS: FaqItem[] = [
     id: 'faq-1',
     category: 'Newsletter & Σκοπός',
     question: 'Τι είναι το theopenmind.club Mailcast και σε ποιους απευθύνεται;',
-    answer: 'Το theopenmind.club είναι ένα εβδομαδιαίο ψηφιακό dispatch (Mailcast) σχεδιασμένο για creators, tech entrepreneurs, operators και επαγγελματίες που αρνούνται τα παραδοσιακά στεγανά. Κάθε Κυριακή αποδομούμε πραγματικά συστήματα, mindset shifts και εργαλεία υλοποίησης χωρίς περιττή φλυαρία.'
+    answer: 'Το theopenmind.club είναι ένα εβδομαδιαίο ψηφιακό dispatch (Mailcast) σχεδιασμένο για creators, tech entrepreneurs, operators και επαγγελματίες που αρνούνται τα παραδοσιακά στεγανά. Κάθε Τετάρτη αποδομούμε πραγματικά συστήματα, mindset shifts και εργαλεία υλοποίησης χωρίς περιττή φλυαρία.'
   },
   {
     id: 'faq-2',
@@ -38,7 +39,7 @@ const FAQS: FaqItem[] = [
     id: 'faq-5',
     category: 'Συχνότητα & Privacy',
     question: 'Πόσο συχνά στέλνετε emails και τι ισχύει για τα δεδομένα μου;',
-    answer: 'Στέλνουμε αυστηρά 1 email την εβδομάδα, κάθε Κυριακή πρωί. Σεβόμαστε απόλυτα τον χρόνο και την ηρεμία σου: μηδενικό spam, πλήρης συμμόρφωση με το GDPR, και δυνατότητα διαγραφής με 1 κλικ στο υποσέλιδο κάθε μηνύματος.'
+    answer: 'Στέλνουμε αυστηρά 1 email την εβδομάδα, κάθε Τετάρτη πρωί. Σεβόμαστε απόλυτα τον χρόνο και την ηρεμία σου: μηδενικό spam, πλήρης συμμόρφωση με το GDPR, και δυνατότητα διαγραφής με 1 κλικ στο υποσέλιδο κάθε μηνύματος.'
   },
   {
     id: 'faq-6',
@@ -124,9 +125,12 @@ export const FaqSection: React.FC = () => {
         </div>
 
         {/* Quiet Help Note */}
-        <div className="mt-12 text-center text-xs text-[#592828]/70 dark:text-[#EAE3D3]/60">
+        <div className="mt-12 text-center text-sm font-medium text-[#592828]/80 dark:text-[#EAE3D3]/80">
           Έχεις κάποια άλλη ερώτηση; Απάντησε απευθείας σε οποιοδήποτε εβδομαδιαίο Mailcast — διαβάζουμε και απαντάμε σε κάθε email.
         </div>
+
+        {/* Interactive Chatbot & Survey Tool */}
+        <InteractiveChatbot />
 
       </div>
     </section>

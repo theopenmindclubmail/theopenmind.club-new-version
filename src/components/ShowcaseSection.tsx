@@ -4,51 +4,55 @@ import { BrandStar } from './BrandStar.tsx';
 
 export const ShowcaseSection: React.FC = () => {
   return (
-    <section id="showcase" className="py-24 relative border-t border-[#592828]/15 dark:border-[#B0A7E7]/15 bg-[#FAF7F0]/60 dark:bg-[#120D18]/70 transition-colors">
+    <section 
+      id="showcase" 
+      className="py-24 relative border-t border-[#7F5539]/25 transition-colors bg-[#EDE0D4]/40 dark:bg-[#1A110D]/90"
+      style={{
+        backgroundImage: 'radial-gradient(circle at 10% 20%, rgba(127, 85, 57, 0.05) 0%, transparent 40%), radial-gradient(circle at 90% 80%, rgba(237, 224, 212, 0.08) 0%, transparent 40%)'
+      }}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header - Exact Copy */}
+        {/* Section Header - Without '/ Proof of Execution' */}
         <div className="max-w-3xl mb-16">
-          <div className="text-xs font-semibold tracking-wider uppercase text-[#544799] dark:text-[#B0A7E7] mb-3 flex items-center gap-2">
-            <BrandStar size={14} className="text-[#592828] dark:text-[#B0A7E7]" />
-            <span>Showcase & Portfolio</span>
-            <span className="opacity-40" aria-hidden="true">/</span>
-            <span className="text-[#592828]/70 dark:text-[#EAE3D3]/70 font-normal">Proof of Execution</span>
+          <div className="text-sm font-semibold tracking-wider uppercase text-[#7F5539] dark:text-[#EDE0D4] mb-3 flex items-center gap-2">
+            <BrandStar size={16} className="text-[#7F5539] dark:text-[#EDE0D4]" />
+            <span className="font-mono">Showcase & Portfolio</span>
           </div>
-          <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#592828] dark:text-[#EAE3D3] tracking-tight [text-wrap:balance]">
-            Από τη Θεωρία στην Πράξη: Τι σημαίνει Top-Level Web Architecture
+          <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#7F5539] dark:text-[#EDE0D4] tracking-tight [text-wrap:balance]">
+            Θεωρία και Πράξη: Top-Level Web Architecture
           </h2>
-          <p className="mt-4 text-[#592828]/80 dark:text-[#EAE3D3]/80 text-base sm:text-lg leading-relaxed [text-wrap:balance]">
-            Δεν μιλάμε απλώς για σύγχρονο design και vibe coding — το υλοποιούμε.
+          <p className="mt-4 text-[#7F5539]/90 dark:text-[#EDE0D4]/90 text-lg sm:text-xl leading-relaxed [text-wrap:balance]">
+            Υλοποίηση σύγχρονου design και ψηφιακής αρχιτεκτονικής δομής.
           </p>
         </div>
 
-        {/* Featured Project Card - Lighthouse Athens v2 */}
-        <div className="rounded-3xl border border-[#592828]/15 dark:border-[#B0A7E7]/20 bg-white dark:bg-[#1E1729] overflow-hidden shadow-lg dark:shadow-[0_20px_70px_-20px_rgba(0,0,0,0.9)]">
+        {/* Featured Project Card - HOUSE OF LIGHT! · ATHENS */}
+        <div className="rounded-3xl border border-[#7F5539]/30 dark:border-[#7F5539]/40 bg-[#EDE0D4]/80 dark:bg-[#251812] overflow-hidden shadow-xl dark:shadow-[0_20px_70px_-20px_rgba(0,0,0,0.85)]">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-0">
             {/* Visual Preview Side (7 cols) */}
-            <div className="lg:col-span-7 relative group bg-black/60 overflow-hidden flex flex-col justify-center">
+            <div className="lg:col-span-7 relative group bg-[#1F140F] overflow-hidden flex flex-col justify-center">
               <div className="relative aspect-[16/10] sm:aspect-[16/9] w-full overflow-hidden">
                 <img
-                  src="/src/assets/images/lighthouse_athens_preview_1793104877661.jpg"
-                  alt="Lighthouse Athens v2 - Top-Level Web Architecture"
+                  src="/assets/aistudio/Bildschirmfoto_2026-10-29_um_20.23.39_61c050bb.png"
+                  alt="HOUSE OF LIGHT! · ATHENS - Top-Level Web Architecture"
                   referrerPolicy="no-referrer"
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent lg:hidden" />
               </div>
 
               {/* Live Preview Button Ribbon */}
-              <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between gap-3 p-3 rounded-xl backdrop-blur-xl bg-[#15101B]/85 border border-[#B0A7E7]/30">
-                <div className="flex items-center gap-2 text-xs font-mono text-[#B0A7E7] truncate">
-                  <span className="w-2 h-2 rounded-full bg-[#B0A7E7]" />
-                  <span className="truncate">light-house-athens.app</span>
+              <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between gap-3 p-3.5 rounded-xl backdrop-blur-xl bg-[#251812]/90 border border-[#7F5539]/40 shadow-lg">
+                <div className="flex items-center gap-2.5 text-xs sm:text-sm font-mono text-[#EDE0D4] truncate">
+                  <span className="w-2.5 h-2.5 rounded-full bg-[#7F5539] shadow-[0_0_8px_#7F5539]" />
+                  <span className="truncate font-semibold tracking-wide">house-of-light-athens</span>
                 </div>
                 <div className="flex items-center gap-2 shrink-0">
                   <a
-                    href="https://lighthouse-athens-v2.vercel.app/"
+                    href="https://light-house-athens-nits.vercel.app/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold bg-[#EAE3D3] text-[#592828] hover:bg-white transition-colors"
+                    className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg text-xs sm:text-sm font-bold bg-[#EDE0D4] text-[#7F5539] hover:bg-white transition-all shadow-sm active:scale-95"
                   >
                     <span>Άνοιγμα Site</span>
                     <ExternalLink className="w-3.5 h-3.5" />
@@ -58,96 +62,124 @@ export const ShowcaseSection: React.FC = () => {
             </div>
 
             {/* Information & Architecture Side (5 cols) */}
-            <div className="lg:col-span-5 p-8 sm:p-10 flex flex-col justify-between border-t lg:border-t-0 lg:border-l border-[#592828]/15 dark:border-[#B0A7E7]/15">
+            <div className="lg:col-span-5 p-8 sm:p-10 flex flex-col justify-between border-t lg:border-t-0 lg:border-l border-[#7F5539]/25 dark:border-[#7F5539]/35 bg-[#EDE0D4]/60 dark:bg-[#20140F]">
               <div>
                 <div className="flex items-center justify-between gap-3 mb-4">
-                  <span className="text-xs font-mono uppercase tracking-wider text-[#544799] dark:text-[#B0A7E7] font-bold">Featured Case Study</span>
-                  <span className="text-xs text-[#592828]/60 dark:text-[#EAE3D3]/60">Production Build</span>
+                  <span className="text-xs font-mono uppercase tracking-wider text-[#7F5539] dark:text-[#EDE0D4] font-bold">
+                    Featured Case Study
+                  </span>
+                  <span className="text-xs font-mono text-[#7F5539]/80 dark:text-[#EDE0D4]/70 px-2 py-0.5 rounded bg-[#7F5539]/10 dark:bg-[#7F5539]/25">
+                    Production Build
+                  </span>
                 </div>
 
-                {/* Project Title - Exact Copy: Lighthouse Athens v2 */}
-                <h3 className="font-heading text-2xl sm:text-3xl font-extrabold text-[#592828] dark:text-[#EAE3D3] mb-2">
-                  Lighthouse Athens v2
+                {/* Project Title - House of Light! */}
+                <h3 className="font-heading text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#7F5539] dark:text-[#EDE0D4] mb-2 tracking-tight">
+                  HOUSE OF LIGHT! · ATHENS
                 </h3>
 
-                <p className="text-xs text-[#592828]/70 dark:text-[#EAE3D3]/70 font-mono mb-6">
+                <p className="text-xs sm:text-sm text-[#7F5539]/80 dark:text-[#EDE0D4]/75 font-mono mb-6">
                   Vercel Edge · Next.js · High-Performance UI/UX
                 </p>
 
-                {/* Highlights - Exact Copy */}
+                {/* Highlights */}
                 <div className="space-y-4 mb-8">
                   <div className="flex items-start gap-3">
-                    <div className="p-2 rounded-lg bg-[#544799]/15 dark:bg-[#544799]/30 text-[#544799] dark:text-[#B0A7E7] border border-[#544799]/20 shrink-0 mt-0.5">
+                    <div className="p-2.5 rounded-xl bg-[#7F5539] text-[#EDE0D4] shrink-0 mt-0.5 shadow-sm">
                       <Sparkles className="w-4 h-4" />
                     </div>
                     <div>
-                      <h4 className="font-heading text-base font-bold text-[#592828] dark:text-[#EAE3D3]">Υπερσύγχρονο UI/UX</h4>
-                      <p className="text-xs text-[#592828]/80 dark:text-[#EAE3D3]/80 mt-0.5 leading-relaxed">
-                        Μινιμαλιστική πολυτέλεια, crisp τυπογραφία, σκοτεινή αισθητική και αβίαστη πλοήγηση.
+                      <h4 className="font-heading text-base sm:text-lg font-bold text-[#7F5539] dark:text-[#EDE0D4]">
+                        Υπερσύγχρονο UI/UX
+                      </h4>
+                      <p className="text-xs sm:text-sm text-[#7F5539]/85 dark:text-[#EDE0D4]/80 mt-1 leading-relaxed">
+                        Μινιμαλιστική πολυτέλεια, crisp τυπογραφία, ζεστή αισθητική και αβίαστη πλοήγηση.
                       </p>
                     </div>
                   </div>
 
                   <div className="flex items-start gap-3">
-                    <div className="p-2 rounded-lg bg-[#592828]/10 dark:bg-[#592828]/30 text-[#592828] dark:text-[#EAE3D3] border border-[#592828]/20 shrink-0 mt-0.5">
+                    <div className="p-2.5 rounded-xl bg-[#7F5539]/20 dark:bg-[#7F5539]/40 text-[#7F5539] dark:text-[#EDE0D4] border border-[#7F5539]/30 shrink-0 mt-0.5">
                       <Zap className="w-4 h-4" />
                     </div>
                     <div>
-                      <h4 className="font-heading text-base font-bold text-[#592828] dark:text-[#EAE3D3]">Αστραπιαία ταχύτητα φόρτωσης</h4>
-                      <p className="text-xs text-[#592828]/80 dark:text-[#EAE3D3]/80 mt-0.5 leading-relaxed">
+                      <h4 className="font-heading text-base sm:text-lg font-bold text-[#7F5539] dark:text-[#EDE0D4]">
+                        Αστραπιαία ταχύτητα φόρτωσης
+                      </h4>
+                      <p className="text-xs sm:text-sm text-[#7F5539]/85 dark:text-[#EDE0D4]/80 mt-1 leading-relaxed">
                         Υλοποίηση σε Next.js με Vercel Edge Serverless routing και μηδενικό hydration lag.
                       </p>
                     </div>
                   </div>
 
                   <div className="flex items-start gap-3">
-                    <div className="p-2 rounded-lg bg-[#B0A7E7]/25 dark:bg-[#544799]/30 text-[#544799] dark:text-[#B0A7E7] border border-[#544799]/20 shrink-0 mt-0.5">
+                    <div className="p-2.5 rounded-xl bg-[#7F5539]/20 dark:bg-[#7F5539]/40 text-[#7F5539] dark:text-[#EDE0D4] border border-[#7F5539]/30 shrink-0 mt-0.5">
                       <Smartphone className="w-4 h-4" />
                     </div>
                     <div>
-                      <h4 className="font-heading text-base font-bold text-[#592828] dark:text-[#EAE3D3]">Άψογο mobile responsiveness & clean aesthetics</h4>
-                      <p className="text-xs text-[#592828]/80 dark:text-[#EAE3D3]/80 mt-0.5 leading-relaxed">
+                      <h4 className="font-heading text-base sm:text-lg font-bold text-[#7F5539] dark:text-[#EDE0D4]">
+                        Άψογο mobile responsiveness & clean aesthetics
+                      </h4>
+                      <p className="text-xs sm:text-sm text-[#7F5539]/85 dark:text-[#EDE0D4]/80 mt-1 leading-relaxed">
                         Απόλυτη προσαρμογή σε κάθε οθόνη, χωρίς περιττό οπτικό θόρυβο ή περιττά στοιχεία.
                       </p>
                     </div>
                   </div>
                 </div>
 
-                {/* Performance Metric Strip */}
-                <div className="p-4 rounded-xl bg-[#FAF7F0] dark:bg-[#15101B]/70 border border-[#592828]/15 dark:border-[#B0A7E7]/15 mb-6 grid grid-cols-4 gap-2 text-center">
-                  <div>
-                    <div className="text-base sm:text-lg font-bold text-[#544799] dark:text-[#B0A7E7] font-mono">100</div>
-                    <div className="text-[10px] text-[#592828]/70 dark:text-[#EAE3D3]/60 uppercase">Performance</div>
-                  </div>
-                  <div>
-                    <div className="text-base sm:text-lg font-bold text-[#544799] dark:text-[#B0A7E7] font-mono">100</div>
-                    <div className="text-[10px] text-[#592828]/70 dark:text-[#EAE3D3]/60 uppercase">Access</div>
-                  </div>
-                  <div>
-                    <div className="text-base sm:text-lg font-bold text-[#544799] dark:text-[#B0A7E7] font-mono">100</div>
-                    <div className="text-[10px] text-[#592828]/70 dark:text-[#EAE3D3]/60 uppercase">Best Pract.</div>
-                  </div>
-                  <div>
-                    <div className="text-base sm:text-lg font-bold text-[#544799] dark:text-[#B0A7E7] font-mono">100</div>
-                    <div className="text-[10px] text-[#592828]/70 dark:text-[#EAE3D3]/60 uppercase">SEO</div>
+                {/* Performance Metric Strip - Fixed Layout to Prevent Text Overlap */}
+                <div className="p-3.5 rounded-2xl bg-[#EDE0D4] dark:bg-[#1A110D] border border-[#7F5539]/30 shadow-inner mb-6">
+                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
+                    <div className="p-2.5 rounded-xl bg-white/70 dark:bg-[#251812] border border-[#7F5539]/20 text-center flex flex-col justify-center">
+                      <div className="text-xl sm:text-2xl font-black text-[#7F5539] dark:text-[#EDE0D4] font-mono leading-none">
+                        100
+                      </div>
+                      <div className="text-[10px] font-bold text-[#7F5539]/80 dark:text-[#EDE0D4]/80 uppercase tracking-wider mt-1.5">
+                        Performance
+                      </div>
+                    </div>
+                    <div className="p-2.5 rounded-xl bg-white/70 dark:bg-[#251812] border border-[#7F5539]/20 text-center flex flex-col justify-center">
+                      <div className="text-xl sm:text-2xl font-black text-[#7F5539] dark:text-[#EDE0D4] font-mono leading-none">
+                        100
+                      </div>
+                      <div className="text-[10px] font-bold text-[#7F5539]/80 dark:text-[#EDE0D4]/80 uppercase tracking-wider mt-1.5">
+                        Access
+                      </div>
+                    </div>
+                    <div className="p-2.5 rounded-xl bg-white/70 dark:bg-[#251812] border border-[#7F5539]/20 text-center flex flex-col justify-center">
+                      <div className="text-xl sm:text-2xl font-black text-[#7F5539] dark:text-[#EDE0D4] font-mono leading-none">
+                        100
+                      </div>
+                      <div className="text-[10px] font-bold text-[#7F5539]/80 dark:text-[#EDE0D4]/80 uppercase tracking-wider mt-1.5">
+                        Best Pract.
+                      </div>
+                    </div>
+                    <div className="p-2.5 rounded-xl bg-white/70 dark:bg-[#251812] border border-[#7F5539]/20 text-center flex flex-col justify-center">
+                      <div className="text-xl sm:text-2xl font-black text-[#7F5539] dark:text-[#EDE0D4] font-mono leading-none">
+                        100
+                      </div>
+                      <div className="text-[10px] font-bold text-[#7F5539]/80 dark:text-[#EDE0D4]/80 uppercase tracking-wider mt-1.5">
+                        SEO
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
 
-              {/* Takeaway - Exact Copy */}
-              <div className="pt-6 border-t border-[#592828]/15 dark:border-[#B0A7E7]/15">
-                <p className="text-xs sm:text-sm text-[#592828]/80 dark:text-[#EAE3D3]/80 italic leading-relaxed">
-                  «Ένα ζωντανό παράδειγμα του πώς η τεχνολογία και το design συγχρονίζονται για να δημιουργήσουν κορυφαίες ψηφιακές εμπειρίες.»
+              {/* Takeaway & Updated Quote */}
+              <div className="pt-6 border-t border-[#7F5539]/25 dark:border-[#7F5539]/35">
+                <p className="text-sm sm:text-base text-[#7F5539] dark:text-[#EDE0D4] italic font-medium leading-relaxed">
+                  «Πως δημιουργείται μια κορυφαία ψηφιακή εμπειρία; Ένα ζωντανό παράδειγμα συγχρονισμού τεχνολογίας και design.»
                 </p>
                 <div className="mt-4 flex items-center justify-between">
                   <a
-                    href="https://lighthouse-athens-v2.vercel.app/"
+                    href="https://light-house-athens-nits.vercel.app/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-xs text-[#544799] dark:text-[#B0A7E7] hover:underline font-bold inline-flex items-center gap-1.5 transition-colors"
+                    className="text-sm text-[#7F5539] dark:text-[#EDE0D4] hover:underline font-extrabold inline-flex items-center gap-1.5 transition-colors"
                   >
-                    <span>Επισκεφθείτε το Live Project (light-house-athens.app)</span>
-                    <ExternalLink className="w-3.5 h-3.5" />
+                    <span>Επισκεφθείτε το Live Project (HOUSE OF LIGHT! · ATHENS)</span>
+                    <ExternalLink className="w-4 h-4" />
                   </a>
                 </div>
               </div>
